@@ -1,0 +1,41 @@
+<ion-view title="Add jobs" class="padding">
+  <ion-content>
+    <div class ="list" >
+     <label class="item item-input item-floating-label">
+        <span class="input-label">job-Title</span>
+        <input type="text" ng-model="adl.classTitle" placeholder="job name">
+     </label>
+     <label class="item item-input item-floating-label">
+        <span class="input-label">job-Id</span>
+        <input type="number" ng-model="adl.classId" placeholder="job id">
+     </label>
+
+    <label class="item item-input item-floating-label">
+       <span class="input-label">Salary</span>
+       <input type="number" ng-model="adl.classBookingPrice" placeholder="salary">
+    </label>
+
+
+   <!--   <label class="item item-input item-floating-label">
+        <span class="input-label">Image-Link</span>
+        <input type="text" ng-model="adl.classImage" placeholder="Image link">
+
+     </label> -->
+
+     <label class="item item-input item-floating-label">
+        <span class="input-label">job-Description</span>
+        <input type="text" ng-model="adl.classDescription" placeholder="Description">
+     </label>
+
+     <div class="padding">
+        <button  ng-click="adl.addClass()" class="button button-block button-assertive">Add Jobs
+        </button>
+     </div>
+     <!--Sign up button
+     <div class="padding">
+       <button ui-sref="register" class="button button-block button-calm">Sign Up
+      </div>
+   -->
+  </div>
+  </ion-content>
+</ion-view>

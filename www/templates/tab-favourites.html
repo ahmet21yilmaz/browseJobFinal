@@ -1,0 +1,21 @@
+<ion-view view-title="Favourites">
+  <ion-content>
+   
+
+    <ion-list ng-show="userloggedIn">
+      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="favClass in favoritesClasses | orderBy:title">
+      
+
+        <h2>{{favClass.title}}</h2>
+        <p>Hourly Rate: {{favClass.price}}</p>
+
+      </ion-item>
+    </ion-list>
+
+  <ion-item ng-show="!userloggedIn" ui-sref="main" class="ng-hide text-center padding" type="item-text-wrap" style="color:red;font-size:20px;font-style:bold;">
+  <h3>Login <h3>
+    <p>Please Login To See Your Favourites jobs</p>
+
+  </ion-item>
+</ion-content>
+</ion-view>
